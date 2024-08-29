@@ -1,6 +1,6 @@
 name: I5377I10643
 version: '0.1.1'
 author: '557'
-main: icu.suc.kevin557.I18nMini
+main: icu.suc.kevin557.i18nmini.I18nMini
 api-version: '1.21'
 depend: [ ProtocolLib ]
