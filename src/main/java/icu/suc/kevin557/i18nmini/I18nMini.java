@@ -136,6 +136,7 @@ public final class I18nMini extends JavaPlugin {
     }
 
     private static Component render(Component component, Locale locale) {
-        return MiniMessage.miniMessage().deserialize(PATTERN.matcher(MiniMessage.miniMessage().serialize(GlobalTranslator.render(component, locale))).replaceAll(""));
+        MiniMessage miniMessage = MiniMessage.miniMessage();
+        return miniMessage.deserialize(PATTERN.matcher(miniMessage.serialize(GlobalTranslator.render(component, locale))).replaceAll(""));
     }
 }
